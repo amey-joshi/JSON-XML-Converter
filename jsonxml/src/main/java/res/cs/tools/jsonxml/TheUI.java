@@ -25,6 +25,7 @@ package res.cs.tools.jsonxml;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.UnsupportedLookAndFeelException;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
@@ -214,7 +215,10 @@ public class TheUI extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException
+                | InstantiationException
+                | IllegalAccessException
+                | UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(TheUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
